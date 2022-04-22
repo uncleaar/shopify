@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,18 +15,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@common": [
-        "framework/common"
-      ],
-      "@common/*": [
-        "framework/common/*"
-      ],
-      "@framework": [
-        "framework/shopify"
-      ],
-      "@framework/*": [
-        "framework/shopify/*"
-      ],
+      "@common": ["framework/common"],
+      "@common/*": ["framework/common/*"],
+      "@framework": ["framework/shopify"],
+      "@framework/*": ["framework/shopify/*"]
     },
     "incremental": true
   },
