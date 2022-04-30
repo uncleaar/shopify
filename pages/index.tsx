@@ -2,6 +2,7 @@ import getALlProducts from '@framework/product/get-all-products'
 import type { InferGetStaticPropsType } from 'next'
 
 import { getConfig } from '@framework/api/config'
+import { Layout } from '@components/common'
 
 export async function getStaticProps() {
   const config = getConfig()
@@ -17,7 +18,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ products }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  return <div>{JSON.stringify(products)}</div>
+  return <Layout>{JSON.stringify(products)}</Layout>
 }
 
 export default Home
