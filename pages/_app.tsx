@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app'
+import '@assets/main.css'
 
 const Noop: React.FC = ({ children }) => <> </>
 
