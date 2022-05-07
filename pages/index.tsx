@@ -18,7 +18,9 @@ export async function getStaticProps() {
 }
 
 const Home = ({ products }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  return <Layout>{JSON.stringify(products)}</Layout>
+  return <div>{JSON.stringify(products)}</div>
 }
 
 export default Home
+
+Home.Layout = Layout
